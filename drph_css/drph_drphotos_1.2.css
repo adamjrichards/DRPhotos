@@ -1,0 +1,36 @@
+/* CSS Document */
+
+
+body {
+	color: black;
+}
+#curtain {
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-image: url(../resources/images/drphotos_web/fan_leaf.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+#text_dr {
+	width: 50em;
+	height: 154px;
+	background: url(../resources/images/drphotos_web/text_dr.png);
+	background-size: 100% 100%;
+	margin: 40% auto 5% auto;
+}
+#text_photos {
+	width: 610px;
+	height: 61px;
+	background: url(../resources/images/drphotos_web/text_photosstories.png);
+	background-size: 100% 100%;
+	margin: auto;
+}
+#text_start {
+	width: 279px;
+	height: 64px;
+	background: url(../resources/images/drphotos_web/text_start.png);
+	background-size: 100% 100%;
+	margin: auto;
+}

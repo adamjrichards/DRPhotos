@@ -1,0 +1,59 @@
+{
+     "the_player_menu_listeners" : {
+		"my_player_play"	: {
+			"my_mouseenter"	:    [ "add mousedown once capture", "add mouseleave once capture" ],
+			"my_mouseleave"	:	[ "add mouseenter once capture","add mousedown once capture" ],
+			"my_mousedown"		:    "add mouseup once capture"
+		},
+		"my_player_stop"	: {
+			"my_mouseenter"	:    [ "add mousedown once capture", "add mouseleave once capture" ],
+			"my_mouseleave"	:	[ "add mouseenter once capture","add mousedown once capture" ],
+			"my_mousedown"		:    "add mouseup once capture"
+		},
+		"my_player_pause"	: {
+			"my_mouseenter"	:    [ "add mousedown once capture", "add mouseleave once capture" ],
+			"my_mouseleave"	:	[ "add mouseenter once capture","add mousedown once capture" ],
+			"my_mousedown"		:    "add mouseup once capture"
+		},
+		"my_player_record"	: {
+			"my_mouseenter"	:    [ "add mousedown once capture", "add mouseleave once capture" ],
+			"my_mouseleave"	:	[ "add mouseenter once capture","add mousedown once capture" ],
+			"my_mousedown"		:    "add mouseup once capture"
+		},
+		"my_player_rewind"	: {
+			"my_mouseenter"	:    [ "add mousedown once capture", "add mouseleave once capture" ],
+			"my_mouseleave"	:	[ "add mouseenter once capture","add mousedown once capture" ],
+			"my_mousedown"		:    "add mouseup once capture"
+		},
+		"my_player_fast_forward"	: {
+			"my_mouseenter"	:    [ "add mousedown once capture", "add mouseleave once capture" ],
+			"my_mouseleave"	:	[ "add mouseenter once capture","add mousedown once capture" ],
+			"my_mousedown"		:    "add mouseup once capture"
+		},
+		"my_player_skip_ahead"	: {
+			"my_mouseenter"	:    [ "add mousedown once capture", "add mouseleave once capture" ],
+			"my_mouseleave"	:	[ "add mouseenter once capture","add mousedown once capture" ],
+			"my_mousedown"		:    "add mouseup once capture"
+		},
+		"my_player_skip_back"	: {
+			"my_mouseenter"	:    [ "add mousedown once capture", "add mouseleave once capture" ],
+			"my_mouseleave"	:	[ "add mouseenter once capture","add mousedown once capture" ],
+			"my_mousedown"		:    "add mouseup once capture"
+		},
+		"my_player_skip_to_the_beginning"	: {
+			"my_mouseenter"	:    [ "add mousedown once capture", "add mouseleave once capture" ],
+			"my_mouseleave"	:	[ "add mouseenter once capture","add mousedown once capture" ],
+			"my_mousedown"		:    "add mouseup once capture"
+		},
+		"my_player_skip_to_the_end"	: {
+			"my_mouseenter"	:    [ "add mousedown once capture", "add mouseleave once capture" ],
+			"my_mouseleave"	:	[ "add mouseenter once capture","add mousedown once capture" ],
+			"my_mousedown"		:    "add mouseup once capture"
+		},
+		"my_player_now_playing"	: {
+			"my_mouseenter"	:    [ "add mousedown once capture", "add mouseleave once capture" ],
+			"my_mouseleave"	:	[ "add mouseenter once capture","add mousedown once capture" ],
+			"my_mousedown"		:    "add mouseup once capture"
+		}
+	}
+}

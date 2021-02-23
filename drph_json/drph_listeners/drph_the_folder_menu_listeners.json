@@ -1,0 +1,29 @@
+{
+     "the_folder_menu_listeners" : {
+		"my_folder_up"	: {
+			"my_mouseenter_action"	:    "add mousedown once capture",
+			"my_mouseleave_action"	:	"add mouseenter once capture",
+			"my_mousedown_action"	:    "add mouseup once capture"
+		},
+		"my_folder_next"	: {
+			"my_mouseenter_action"	:    "add mousedown once capture",
+			"my_mouseleave_action"	:	"add mouseenter once capture",
+			"my_mousedown_action"	:    "add mouseup once capture"
+		},
+		"my_folder_previous"	: {
+			"my_mouseenter_action"	:    "add mousedown once capture",
+			"my_mouseleave_action"	:	"add mouseenter once capture",
+			"my_mousedown_action"	:    "add mouseup once capture"
+		},
+		"my_folder_open"	: {
+			"my_mouseenter_action"	:    "add mousedown once capture",
+			"my_mouseleave_action"	:	"add mouseenter once capture",
+			"my_mousedown_action"	:    "add mouseup once capture"
+		},
+		"my_folder_close"	: {
+			"my_mouseenter_action"	:    "add mousedown once capture",
+			"my_mouseleave_action"	:	"add mouseenter once capture",
+			"my_mousedown_action"	:    "add mouseup once capture"
+		}
+	}
+}

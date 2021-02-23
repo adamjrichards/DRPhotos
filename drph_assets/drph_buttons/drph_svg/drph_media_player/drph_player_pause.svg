@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+	<defs>
+		<style>
+			#player_pause_badge {
+				fill: black;
+			}
+			#player_pause_symbol {
+				fill:#efda00;
+			}
+		</style>
+	</defs>
+	<title>player_pause</title>
+	<g id="player_pause">
+		<g id="player_pause_badge">
+			<circle cx="200" cy="200" r="200"/>
+		</g>
+		<g id="player_pause_symbol">
+			<rect class="pause_symbol" x="230" y="75" width="82" height="250"/>
+			<rect class="pause_symbol" x="90" y="75" width="82" height="250"/>
+		</g>
+	</g>
+</svg>

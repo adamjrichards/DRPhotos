@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+
+<style>
+IMG {width:100%;
+ height:;
+ border:1px solid black;}
+font {font-size:25px;} 
+
+</style>
+
+</head>
+<body>
+<font>
+<B> Google search of DR web pages.</B>
+<BR>
+ Use "find in page" within found items to locate exact position.
+
+<BR>
+<script>
+  (function() {
+    var cx = '016462288919676875412:ww4b9qig7ji';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+<BR><P>
+<BR> Use this email link for comments:
+<A href="mailto:derek.richards@sympatico.ca?subject=Hello Derek">
+<target="_top">Send Mail
+</A>
+</P>
+<BR> If you're commenting on specific typos, factual errors, or individual
+pictures, please include the page name, eg. xyz.htm, and the picture number,
+eg. D123-456.jpeg. This will facilitate finding the location in a jungle of
+1000+ web pages and 50,000+ images.
+<BR>
+<BR>
+<BR>
+<BR>

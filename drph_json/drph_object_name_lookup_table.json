@@ -1,0 +1,16 @@
+{
+	"navbar"			:	"NavBar",
+	"navlist"			:	"NavList",
+	"navmenu"			:	"NavMenu",
+	"navitem"			:	"NavItem",
+	"navlink"			:	"NavLink",
+	"menubar"			:	"MenuBar",
+	"menulist"			:	"MenuList",
+	"menulink"			:	"MenuLink",
+	"menuitem"			:	"MenuItem",
+	"archives navbar"	:	"Archives_NavBar",
+	"archives navlist"	:	"Archives_NavList",
+	"archives navmenu"	:	"Archives_NavMenu",
+	"archives navitem"	:	"Archives_NavItem",
+	"archives navlink"	:	"Archives_NavLink"	
+}

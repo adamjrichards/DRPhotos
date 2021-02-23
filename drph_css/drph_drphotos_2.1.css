@@ -1,0 +1,102 @@
+/* CSS Document */
+
+body {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0;
+	background-color: black;
+	overflow: visible;
+}
+#curtain {
+	position: absolute;
+  	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100vmax; 
+	height: 56.25vmax;
+	min-width: 100vmin;
+	min-height: 56.25vmin;
+	max-width: 177vh;
+	max-height: 100vh;
+	margin: auto;
+	background-image: url(../resources/images/drphotos_web/fan_leaf.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition-property: opacity;
+	transition-delay: 0.8s;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+}
+#curtain_left {
+	position: absolute;
+	height: 100%;
+	width: 40%;
+	background-image: url(../resources/images/drphotos_web/curtain_left.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition-property: opacity;
+	transition-delay: 0.8s;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+}
+#curtain_right {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 40%;
+	background-image: url(../resources/images/drphotos_web/curtain_right.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition-property: opacity;
+	transition-delay: 1.6s;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+}
+#text_dr {
+	position: relative;
+	top: 73%;
+	width: 50%;
+	height: 15%;
+	background: url(../resources/images/drphotos_web/text_dr.png);
+	background-size: 100% 100%;
+	margin: auto;
+	opacity: 0;
+	transition-property: opacity;
+	transition-delay: 2.4s;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+}
+#text_photos {
+	position: relative;
+	top: 75%;
+	width: 30%;
+	height: 7%;
+	background: url(../resources/images/drphotos_web/text_photos.png);
+	background-size: 100% 100%;
+	margin: auto;
+	opacity: 0;
+	transition-property: opacity;
+	transition-delay: 3.2s;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+}
+#text_start {
+	position: relative;
+	top: 31%;
+	width: 15%;
+	height: 6%;
+	background: url(../resources/images/drphotos_web/text_start.png);
+	background-size: 100% 100%;
+	margin: auto;
+	opacity: 0;
+	transition-property: opacity;
+	transition-delay: 4s;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+}

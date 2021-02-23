@@ -1,0 +1,621 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	
+
+<SCRIPT LANGUAGE = "JavaScript" type="text/javascript">
+<!-- Hide from old browsers
+// Function to detect browser
+
+function BrowserName() 
+	{  
+	// return 1 for Internet Explorer
+  	if (navigator.appName == "Microsoft Internet Explorer")    return 1;
+  	// return 2 for Navigator  
+	if (navigator.appName == "Netscape")    return 2;
+  	// return 0 for other browsers  
+	return 0;
+	}
+// Function to 'activate' images.
+
+function imgOn(imgName) 
+	{
+	if (document.images) 
+		{document[imgName].src = eval(imgName + "on.src");}
+	}
+
+// Function to 'deactivate' images.
+function imgOff(imgName) 
+	{
+	if (document.images) 
+		{document[imgName].src = eval(imgName + "off.src");}
+	}
+
+// Function to change the Session.
+function ChangeSession(curSession) 
+	{
+	if (curSession==1)
+		{curSession=2;}
+	else
+		{curSession=1;}
+	var myUrl=window.location.pathname + "?Language=&Parl=&Ses="+curSession;
+	window.location.replace(myUrl);
+	}
+	
+		
+	function ClearSearch(form)
+	{
+			document.page_search.elements[5].value = "";
+	}
+	
+	function CheckContent()
+	{
+		var Term = document.page_search.elements[5].value;
+			if(Term == "Search Terms" || Term == "Mots à rechercher")
+				{
+					var myUrl = "http://www.parl.gc.ca/Search/Advanced.asp?Language=&Parl=&Ses=";
+					window.location.href = myUrl;
+				}
+			else
+				{
+					document.page_search.submit();
+				}
+	}
+	
+	function GoToAdvanced()
+	{
+		var myTerm = escape(document.page_search.elements[5].value);
+		var myUrl = "http://www.parl.gc.ca/Search/Advanced.asp?Language=&Parl=&Ses=&search_term=" + myTerm;
+		window.location = myUrl;
+	}	
+//-->
+</script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Canadian Parliamentary Review - Article</title>
+	<LINK href="../style/stylesheet.css" type=text/css rel=STYLESHEET>
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed - Canadian Parliamentary Review" href="RSSFeed.asp" />
+<script type="text/javascript" src="/angelfish.js"></script>
+<script type="text/javascript">
+  agf.pageview();
+</script>
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+
+//for rollovers
+if (document.images) {
+
+home_lo = new Image
+home_hi = new Image
+home_hi.src = '../images/welcome_hi.gif'
+home_lo.src = '../images/welcome_lo.gif'
+
+corp_lo = new Image
+corp_hi = new Image
+corp_lo.src = '../images/bienvenue_lo.gif'
+corp_hi.src = '../images/bienvenue_hi.gif'
+
+
+}
+else    {
+
+home_lo = ""
+home_hi = ""
+document.home = ""
+
+corp_lo = ""
+corp_hi = ""
+document.corp = ""
+
+
+}
+	//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+img1on = createImage (171,23, "images/menu1_hi.gif");
+img2on = createImage (171,23, "images/menu2_hi.gif");
+img3on = createImage (171,23, "images/menu3_hi.gif");
+img4on = createImage (171,23, "images/menu4_hi.gif");
+img5on = createImage (171,23, "images/menu5_hi.gif");
+img6on = createImage (171,23, "images/menu6_hi.gif");
+img7on = createImage (55,27, "images/home_hi.gif");
+img8on = createImage (67,27, "images/contact_hi.gif");
+img9on = createImage (60,27, "images/francais_hi.gif");
+
+img1off = createImage (171,23, "images/menu1_lo.gif");
+img2off = createImage (171,23, "images/menu2_lo.gif");
+img3off = createImage (171,23, "images/menu3_lo.gif");
+img4off = createImage (171,23, "images/menu4_lo.gif");
+img5off = createImage (171,23, "images/menu5_lo.gif");
+img6off = createImage (171,23, "images/menu6_lo.gif");
+img7off = createImage (55,27, "images/home_lo.gif");
+img8off = createImage (67,27, "images/contact_lo.gif");
+img9off = createImage (60,27, "images/francais_lo.gif");
+function createImage(w, h, file) {
+	new_img = new Image(w,h);
+	new_img.src = file;
+	return new_img;
+}
+
+function on(imgName) {
+	imgOn = eval(imgName + "on.src");
+	document [imgName].src = imgOn;
+}
+
+function off(imgName) {
+	imgOff = eval(imgName + "off.src");
+	document [imgName].src = imgOff;
+}
+// -->
+</SCRIPT>
+</head>
+
+<body topmargin="0" leftmargin="0" bgcolor="#C69853">
+<br><br>
+<!--TitleHeader-->
+<table width="739" cellpadding="0" cellspacing="0" align="center" border="0">
+<tr><td><a href="index.asp"><img src="images/logo.gif" alt="Canadian Parliamentary Review" width="214" height="81" border="0"></a></td><td><img src="images/header.gif" width="525" height="81" border="0" alt=""></td></tr>
+</table>
+<!--TitleHeaderEnd-->
+<table width="739" cellpadding="0" cellspacing="0" align="center" border="0">
+<tr>
+<td>
+<table width="733" cellpadding="0" cellspacing="0" class="brnBorder" align="LEFT" bgcolor="#ffffff">
+<tr>
+<!--sideBar-->
+<td valign="top"><form action="archives.asp" method="get"><input name="param" type="hidden" value="sr">
+<table width="170" cellpadding="0" cellspacing="0"  border="0">
+<!--sideNav-->
+<tr>
+<td colspan="2"><img src="images/menuTop.gif" alt="" width="170" height="27" border="0"><br>
+
+<a href="index.asp" ONMOUSEOVER="on('img1')" ONKEYUP="on('img1')" ONMOUSEOUT="off('img1')" ONKEYDOWN="off('img1')"><img src="images/menu1_lo.gif" alt="Current Issue" width="170" height="23" border="0" name="img1"></a><br>
+
+<a href="region.asp" ONMOUSEOVER="on('img2')" ONKEYUP="on('img2')" ONMOUSEOUT="off('img2')" ONKEYDOWN="off('img2')"><img src="images/menu2_lo.gif" alt="Canadian Region CPA" width="170" height="23" border="0" name="img2"></a><br>
+
+<a href="archives.asp"><img src="images/menu3_hi.gif" alt="Archives" width="170" height="23" border="0" name="img3"></a><br>
+
+<a href="next.asp" ONMOUSEOVER="on('img4')" ONKEYUP="on('img4')" ONMOUSEOUT="off('img4')" ONKEYDOWN="off('img4')"><img src="images/menu4_lo.gif" alt="Upcoming Issue" width="170" height="23" border="0" name="img4"></a><br>
+<a href="guidelines.asp" ONMOUSEOVER="on('img5')" ONKEYUP="on('img5')" ONMOUSEOUT="off('img5')" ONKEYDOWN="off('img5')"><img src="images/menu5_lo.gif" alt="Editorial and Stylistic Guidelines" width="170" height="23" border="0" name="img5"></a><br>
+<a href="subscribe.asp" ONMOUSEOVER="on('img6')" ONKEYUP="on('img6')" ONMOUSEOUT="off('img6')" ONKEYDOWN="off('img6')"><img src="images/menu6_lo.gif" alt="Subscribe" width="170" height="23" border="0" name="img6"></a><br>
+<img src="images/menubot.gif" alt="" width="170" height="13" border="0"><br>
+<!--sideNavEnd-->
+</td>
+</tr>
+<!--sideSearch-->
+<tr>
+<td colspan="2"><img src="../images/fadeSpacer.gif" width="170" height="55" border="0" alt=""></td>
+</tr>
+
+<tr>
+<td rowspan="2" bgcolor="#E4E4E4"><img src="../images/searchLeft.gif" width="16" height="48" border="0" alt=""></td>
+<td  bgcolor="#E4E4E4" width="170">
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+	<!--
+	if ((navigator.appName == "Netscape") && (navigator.appVersion < "5")){
+		document.write('<INPUT TYPE="text" SIZE="10" NAME="q">')
+		}
+	else{
+		document.write('<INPUT TYPE="text" SIZE="20" NAME="q">')
+		}
+	// -->
+	</SCRIPT>
+
+</td></tr>
+<tr><td colspan="1" valign="top" align="right" bgcolor="#E4E4E4" class="padding4b" ><a href="javascript:document.forms[0].submit()"><img src="../images/search.gif" width="61" height="18" border="0" alt="Search"></a></td></tr>
+<tr><td colspan="2"><img src="../images/searchBot.gif" width="170" height="19" border="0" alt=""></td></tr>
+
+</table>
+</form>
+<div style="margin-left:15px;"><a href="RSSFeed.asp"><img src="../images/rssfeed.gif" alt="Subsrcibe to RSS feeds for new issues" style="border-style:none;width:25px;height:15px" /> RSS Feed</a></div>
+<!--sideSearchEnd-->
+</td>
+<!--END-->
+<!--Body-->
+<td valign="top" width="557">
+<!--topNav-->
+<table cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" border="0" width="560">
+<tr>
+<td colspan="4"><a href="index.asp" ONMOUSEOVER="on('img7')" ONKEYUP="on('img7')" ONMOUSEOUT="off('img7')" ONKEYDOWN="off('img7')"><img src="images/home_lo.gif" alt="Home" width="55" height="27" border="0" name="img7"></a><img src="images/navSpacer.gif" alt="" width="375" height="27" border="0"><a href="contact.asp" ONMOUSEOVER="on('img8')" ONKEYUP="on('img8')" ONMOUSEOUT="off('img8')" ONKEYDOWN="off('img8')"><img src="images/contact_lo.gif" alt="Contact Us" width="67" height="27" border="0" name="img8"></a><a href="../francais/issue.asp?param=140&art=921" ONMOUSEOVER="on('img9')" ONKEYUP="on('img9')" ONMOUSEOUT="off('img9')" ONKEYDOWN="off('img9')"><img src="images/francais_lo.gif" alt="Français" width="60" height="27" border="0" name="img9"></a></td>
+</tr>
+<!--topNavEnd-->
+<tr>
+<td width="443" valign="top">
+<!--bodyContent-->
+<table width="" cellpadding="0" cellspacing="0">
+<tr><td class="padding10">
+<script language='javascript' src='../scripts/gohere.js'></script>
+<p>
+<a href='../15/1/15n1_92e_Pond.pdf' target='_blank'>PDF</a>
+<br>
+<span class='header1'>Direct Democracy: The Wave of the Future?</span>
+<br>
+<span class='author'><a href='javascript:h_window("author.asp?au=653&art=921", "Author", "width=500,height=300,toolbar=no,scrollbars=yes");' class='author'>David Pond</a></span><br><br>
+<!--
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+
+<title> </title>
+
+
+</head>
+
+<body>
+-->
+
+<div class=Section1>
+
+<p><span style='mso-bidi-font-family:Arial'>At the time this article was
+written David Pond was a Research Officer in the Legislative Research Service
+of the Ontario Legislative Library. This is a revised version of a paper which
+was prepared for the Ontario Delegation to the 16<sup>th</sup> Canadian
+Regional Seminar of the Commonwealth Parliamentary Association held in
+Whitehorse in November 1991. </span></p>
+
+<p><i><span style='mso-bidi-font-family:Arial'>A newfound enthusiasm for direct
+democracy, in the form of referenda and plebiscites, is spreading across
+Canada. In June 1991 the Quebec National Assembly passed a bill which empowers
+the Quebec government to hold a referendum on the constitutional future of the
+province in 1992. In the October 1991 elections held in Saskatchewan and
+British Columbia, referendum and plebiscite questions were on the ballot. (In
+Saskatchewan the voters agreed that the provincial government should be
+required to introduce balanced budget legislation, and that the public should
+have the right to approve through a referendum any proposed constitutional
+amendments; they also voted no to a question asking them whether the government
+should pay for abortions. In B.C., the voters voted yes to questions asking
+them whether they should have the right to recall their MLAs, and to propose
+referendum questions). This paper explains how referenda and plebiscites work,
+and assesses their impact in two of those democracies which have experimented
+with them.</span></i><span style='mso-bidi-font-family:Arial'></span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>A referendum is a vote of all
+eligible voters in a jurisdiction on a proposed policy or law. The wording will
+be in the form of a question, which the voters will be required to answer with
+a yes or a no. Referenda can be binding on the government which conducts them,
+or merely advisory.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>Historically, the terms plebiscite
+and referendum have been used interchangeably. The former is the older term,
+dating back to 4th century B.C. Rome. The plebiscite has tended to be the term
+used to describe references to the people of a specific question entailing the
+approval of a leader, regime, or a change in national boundaries. Plebiscites
+have been employed in Europe to sanction the unification of disparate
+city-states (into modern Italy), the creation of new nations (Norway's
+separation from Sweden in 1905), and the resolution of boundary disputes
+(Schleswig's with France and Germany in the 1920s). Napoleon used plebiscites
+to demonstrate popular support for annexations by France of other countries,
+and revisions of the French constitution.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>In recent decades the term
+referendum has replaced plebiscite in common usage. For example, Denmark, Ireland,
+France, Norway and the United Kingdom held referenda, not plebiscites, on the
+question of membership in the European Economic Community in the early 1970s.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>Saskatchewan's recent Referendum
+and Plebiscite Act revives the use of the term plebiscite, to describe a
+referendum held under its provisions whose result is not binding on the
+government. Under the Saskatchewan Act, a plebiscite must be held once a
+petition calling for one on a particular question is signed by at least 15% of
+the electorate. This kind of referendum or plebiscite is more commonly known as
+the initiative. The initiative is most used today in the United States and
+Switzerland. It is a device which enables the citizenry to vote on a measure
+before it becomes law. It differs from the referendum in that the decision to
+hold a vote originates with the electorate, not the government. The initiative
+procedure is attractive to enthusiasts of direct democracy because it empowers
+the voters to bypass a government reluctant to introduce a policy which enjoys
+popular support.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>The initiative enables citizens to
+compel the government to hold a referendum on a measure supported by a
+specified percentage of the voters who have signed a petition indicating their
+support. Once the petition attracts the requisite number of signatures, a
+national vote is automatically triggered. When a majority votes yes in the
+vote, then the measure in question becomes law whether the government agrees
+with it or not, or (as in the case of the Saskatchewan legislation) the
+government is compelled to take whatever steps are necessary to implement the
+result of the referendum, such as introducing a bill into the legislature.</span></p>
+
+<p><b><span style='mso-bidi-font-family:Arial'>The United States</span></b><span
+style='mso-bidi-font-family:Arial'></span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>The referendum and the initiative
+have a long history in the United States, reflecting the country's populist
+traditions and distrust of government. The referendum was introduced in the
+Massachusetts Bay Colony as early as 1640 and the initiative in 1715. Today, 25
+states and the District of Columbia use the referendum; 23 states and the District
+use the initiative. Twelve states allow municipalities to use the initiative.
+Congress has never adopted either the referendum or the initiative, though it
+has debated the possibility on a number of occasions. In the November 1988
+elections in the U.S., there were more than 200 referendum questions and
+initiatives on the ballot in 41 states. In California alone there were 29
+initiatives.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>Perhaps the most famous initiative
+was Proposition 13 in California whose passage in 1978 slashed property taxes
+by half and compelled painful cuts in public services. Examples of initiative
+questions and referendum voted in recent US elections include:</span></p>
+
+<p style='margin-right:.5in;margin-left:.5in'><span style='mso-bidi-font-family:
+Arial'>in Massachusetts, whether to shut down two nuclear power plants with
+poor safety records, and whether to cut state taxes;</span></p>
+
+<p style='margin-right:.5in;margin-left:.5in'><span style='mso-bidi-font-family:
+Arial'>in Michigan and Arkansas, whether to continue public funding of
+abortions;</span></p>
+
+<p style='margin-right:.5in;margin-left:.5in'><span style='mso-bidi-font-family:
+Arial'>in California, whether to require an HIV test for anyone charged with
+assault or sex crimes; and</span></p>
+
+<p style='margin-right:.5in;margin-left:.5in'><span style='mso-bidi-font-family:
+Arial'>in Colorado, whether all proposed tax increases should be put to a
+public vote.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>One of the most striking
+developments in the use of the initiative in recent years is the number of
+petitions aimed at modifying the operation of the state legislatures. The
+following are examples of initiative questions of this nature circulated among
+the voters in the last three elections.</span></p>
+
+<p style='margin-right:.5in;margin-left:.5in'><span style='mso-bidi-font-family:
+Arial'>in Alaska and Oregon, whether to reduce the salaries of state
+legislators;</span></p>
+
+<p style='margin-right:.5in;margin-left:.5in'><span style='mso-bidi-font-family:
+Arial'>in California and Kansas, whether to reapportion the state legislature;
+and</span></p>
+
+<p style='margin-right:.5in;margin-left:.5in'><span style='mso-bidi-font-family:
+Arial'>in Colorado, California and Oklahoma, whether to set limits on how many
+terms a state legislator can serve.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>Until 1990 few of these initiatives
+passed. In 1990, however, the voters of Colorado and Oklahoma overwhelmingly
+approved an initiative proposal to limit the term of state legislators to eight
+years. In California the voters approved Proposition 140, which set strict
+limits on the number of years any statewide office-holder could serve, from
+governor to the superintendent of education. Under this Proposition, state
+senators, who serve a four-year term, are limited to two terms; and members of
+the state assembly, who serve a two-year term, are limited to a maximum of
+three. In addition, Proposition 140 cut by a third all legislators' salaries
+and their office budgets, and eliminated legislators' pensions. Students of
+Californian politics suggest that Proposition 140 has eliminated full-time
+professional politicians from state politics. Critics argue that a legislature
+composed of part-time, inexperienced legislators will be more vulnerable to
+lobbyists.1</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>Another feature of contemporary
+&quot;initiatie politics&quot; which is worth pointing out is the significant
+number of initiatives introduced by politicians themselves. For example in
+California 15% of all initiatives circulated for signatures since 1970 have
+been authored by state politicians. Moreover, they have been the proponents of
+more than one-third of the initiatives which actually qualified for the
+ballot.2</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>A number of reasons have been
+offered for why politicians might want to start initiatives:</span></p>
+
+<p style='margin-right:.5in;margin-left:.5in'><span style='mso-bidi-font-family:
+Arial'>he or she can draft the measure to read exactly as desired; a bill, in
+contrast, will often have to be amended to attract the support of other
+legislators;</span></p>
+
+<p style='margin-right:.5in;margin-left:.5in'><span style='mso-bidi-font-family:
+Arial'>the initiative campaign, regardless of whether it is successful, can be
+used by a politician to raise his or her profile in the community and the
+media; and</span></p>
+
+<p style='margin-right:.5in;margin-left:.5in'><span style='mso-bidi-font-family:
+Arial'>members of a minority party in the legislature can use the initiative
+process to introduce measures the majority party is blocking in the
+legislature.3</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>There is a long-running debate among
+students of initiatives over whether the process favours left- or right-wing
+causes. One study found that between 1977 and 1986, 43 out of 96 initiatives
+qualifying for the ballot across the country which were introduced by liberal,
+environmentalist or left-leaning groups passed, for a success rate of 43%,
+while 41 out of 91 initiatives introduced by right-wing groups passed, for a
+success rate of 45%.4 This suggests that the initiative is a politically
+neutral instrument which activists on both the left and the right can wield
+with roughly equal chances of success. However, critics point to the high costs
+of circulating a petition for signatures and the subsequent campaign, and argue
+that well-heeled business lobbying groups can afford to spend the money
+necessary to defeat measures proposed by reform and progressive groups.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>A study of initiatives which
+qualified for the ballot in California shows that between 1980 and 1987, the
+side spending the most money 16 times won. Total spending by both sides in the
+29 campaigns amounted to $130 million.5 On the other hand, in recent years
+there have been a number of high-profile campaigns in which the big spenders
+lost. For example, in 1986 in California Proposition 65, the Clean Water-Get
+Tough on Toxics Initiative, passed though its opponents outspent its supporters
+by a margin of more than three-to-one. In 1988, Proposition 99, a 25-cent tax
+increase on cigarettes passed despite a massive spending campaign against it by
+business. It remains true, however, that critics of the initiative will always
+be able to cite campaigns in which it appears that money made the difference. A
+recent prominent example occurred in November 1990 when a recycling initiative
+in Oregon was defeated in a campaign which saw the oil and chemical industry
+outspend environmentalists by a margin of eight-to-one, which included a $2.5
+million television advertising campaign. The &quot;yes&quot; campaign was ahead
+in the polls before its opponents' negative television adds were aired.</span></p>
+
+<p><b><span style='mso-bidi-font-family:Arial'>Switzerland</span></b><span
+style='mso-bidi-font-family:Arial'></span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>Direct democracy also has deep
+historical roots in Switzerland. As early as the 13th century some Swiss
+cantons (the equivalent of provinces in Canada) regularly made decisions by
+popular assent in citizen assemblies. As the population grew and such assemblies
+became impractical (today they survive only in the more thinly populated
+mountain cantons), the referendum was adopted as a means of continuing this
+tradition of direct democracy.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>All amendments to the Swiss
+constitution which are approved by the federal parliament must be submitted to
+a popular referendum. As well, 100,000 citizens (just under 3% of the
+electorate) can trigger a referendum on a proposed amendment by signing a
+petition containing its text within 18 months of its publication. This is known
+as a constitutional initiative. The Swiss National Assembly cannot change the
+text proposed in a constitutional initiative, but it can present a
+counter-proposal, which sometimes results in the withdrawal of the initiative
+by its sponsors. All constitutional amendments proposed in a referendum
+(including a counter-proposal) must win the support of a majority of those
+voting nationally, and a majority of the cantons. This latter requirement makes
+it impossible for the large urban cantons to impose an amendment on the smaller
+rural ones.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>An ordinary law passed by the
+federal parliament is not subject to a referendum, unless this is demanded by
+50,000 citizens (in the form of a petition) or eight cantonal governments
+within 90 days of its publication. If a referendum is held, only a simple
+majority of those voting is necessary for the law to carry. Certain categories
+of legislation, such as the budget, are exempt from the referendum process.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>The use of referenda and
+initiatives by the cantons varies. In some cantons, including the populous ones
+of Zurich, Berne and Argau, a referendum is obligatory for all laws passed by
+the cantonal parliament, excluding certain kinds of financial legislation. (The
+legislative output of the cantonal legislatures is considerably smaller than
+that of Canadian provincial legislatures). In other cantons, a referendum can
+be triggered by a petition: the number of signatures required varies
+considerably from canton to canton. In addition, all cantons employ the
+legislative initiative, whereby the signatures of specified numbers of citizens
+on a petition can trigger a vote on a law passed by the cantonal parliament.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>The only comprehensive statistical
+study in English on direct democracy in Switzerland was published in 1979, and
+it focused exclusively on federal politics. It found that between 1848 and
+1978, 212 referenda on constitutional questions were held. In 199, the majority
+of the population and a majority of the cantons voted the same way (107 yes,
+and 92 no). In each of the five cases in which an over-all majority voted yes,
+but the cantons voted no and prevented the proposal from becoming law, the
+proposal would have given new powers to the federal government. In 18 cases the
+federal parliament put forward a counter-proposal: in seven out of the 18 the
+original initiative was then withdrawn.6</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>Another study, also published in
+1979, found that between 1945 and 1977, 55% of all constitutional initiatives
+were started by political parties, mostly by the smaller ones which had little
+hope of forming the government.7 As in the U.S., therefore, direct democracy
+enables politicians excluded from power to circumvent the control exercised
+over the legislative agenda by the dominant political forces.</span></p>
+
+<p><b><span style='mso-bidi-font-family:Arial'>Conclusion</span></b><span
+style='mso-bidi-font-family:Arial'></span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>It is difficult to make generalizations
+about how political institutions developed in another society would work in
+one's own. However, the experience of the U.S. and Switzerland with the
+referendum and initiative do suggest that while these devices may well enable
+popular sentiment to be brought directly to bear on the political process, they
+will be utilized by those already involved in political activity — interest
+groups and the politicians themselves.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>Critics of direct democracy suggest
+that in a parliamentary democracy the ready use of the referendum or initiative
+would undermine the legitimacy of representative government and downgrade that
+status of the individual Member. Whether or not this is likely can only be a
+matter of speculation. It is important to point out that under our system of
+government public policies can only be transformed into legislation by means of
+bills approved by the legislature and the government remains responsible for
+the administration of legislation. Under the British Columbia and Saskatchewan
+statutes providing for referenda, a referendum result in favour of a particular
+policy simply requires the government to do whatever it deems &quot;necessary
+or advisable&quot; to abide by the referendum result, such as changing existing
+policies, or introducing new legislation into the legislature. Thus, the final
+arbiters of public policy remain the elected legislators.</span></p>
+
+<p><b><span style='mso-bidi-font-family:Arial'>Notes</span></b><span
+style='mso-bidi-font-family:Arial'></span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>1. See Ronald Grover, &quot;The
+Little Word Heard Coast to Coast: No,&quot; <i>Business Week</i> 88:3 (19
+November 1990): 47; and &quot;Out You Go,&quot; <i>The Economist</i> (24
+November 1990): 22-23.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>2. Charles Bell and Charles Price,
+&quot;Are ballot measures the magic ride to success?&quot; <i>California
+Journal</i> 19 (1988): 380.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>3. David B. Magleby,
+&quot;Legislatures and the Initiative: The Politics of Direct Democracy,&quot; <i>Journal
+of State Government</i> 59:1 (1986): 32-33; Sandra Singer, &quot;Should We All
+Vote On It?,&quot; <i>State Legislatures</i> (October 1988): 26; and Kenneth
+Reich, &quot;The 64-Million Dollar Question,&quot; <i>Campaigns and Elections</i>
+(March - April 1989): 15.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>4. <i>Congressional Quarterly</i>,
+&quot;Initiatives: The Democracy or Bad Lawmaking?&quot; Editorial Research
+Reports 30:1 (17 August 1990): 463.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>5. Charles Price, &quot;Afloat on a
+Sea of Cash<i>,&quot; California Law Journal</i> 19 (1988): 481.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>6. Jean-François Aubert,
+&quot;Switzerland,&quot; in <i>Referendums: A Comparative Study of Practice and
+Theory,</i> eds. David Butler and Austin Ranney (Washington, D.C.: American
+Enterprise for Public Policy Research, 1978), pp. 43-46.</span></p>
+
+<p><span style='mso-bidi-font-family:Arial'>7. Marjorie Mowlam, &quot;Popular
+Access to the Decision-making Process in Switzerland: The Role of Direct
+Democracy,&quot; <i>Government and Opposition</i> 14:2 (1979): 185-187.</span></p>
+
+
+
+</div>
+
+</multicol>
+
+<!--
+</body>
+
+</html>
+-->
+
+
+</td></tr>
+
+</table>
+<!--bodyContentEnd-->
+</td>
+<td valign="top" width="116" align="right">
+<table cellpadding="0" cellspacing="0" class="padding8Sides" border="0">
+<!--coverImage-->
+<tr>
+<td ><br><a href="index.asp?param=140"><img src="../images/covers/thumbnails/15n1_92e.jpg" width="100" height="130" border="0" alt="Canadian Parliamentary Review Cover"></a></td>
+</tr>
+<tr><td valign="top">
+<!--coverImageText-->
+<table cellpadding="0" cellspacing="0" background="images/fadeBg2.gif" width="100">
+<tr>
+<td align="center" class="padding6"><span class="volume">Vol 15 no 1<br>1992</span>
+<br><br><br><br><br>
+<!--coverImageTextEnd-->
+</td>
+</tr>
+</table>
+</td></tr>
+</table>
+</td>
+</table>
+
+</td>
+
+</tr>
+</table>
+<!--Shadow-->
+<td rowspan="40" background="images/shadow.gif" width="5" align="right" valign="top"><img src="images/spacer.gif" alt="" width="5" height="27" border="0" ><br></td>
+</tr>
+</table>
+<!--footer-->
+<table width="739" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff">
+<tr><td width="170"><img src="images/leaf.gif" alt="" width="170" height="38" border="0"></td><td width="564" align="right" class="updated">Last Updated: 2016-05-11</td><td  width="7" align="right" valign="top"><img src="images/shadow2.gif" alt="" width="7" height="38" border="0" ></td></tr>
+<tr><td colspan="3"><img src="../images/footer.gif" width="739" height="16" border="0" alt=""></td></tr></table>
+</body>
+</html>

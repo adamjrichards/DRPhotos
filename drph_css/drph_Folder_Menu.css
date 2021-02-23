@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+nav.folder {
+	position: absolute;
+	width: 4.5em;
+	height: 800px;
+	margin: auto;	
+	filter: grayscale( 0.3 ) opacity( 0.6 );
+	transform: scale( 0.9 );
+	padding: calc( 400px - 12em ) 0 0 0;
+}
+nav.folder:hover {
+	filter: grayscale( 0 ) opacity( 0.9 );
+}
+ul.folder {
+	height: 21em;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient( to bottom, transparent, rgba( 0, 0, 0, 0.1 ) 2%, rgba( 0, 0, 70, 0.5 ) 85%, rgba( 200, 100, 0, 0.23 ) 98%, transparent ), linear-gradient( to right, transparent, rgba( 50, 100, 50, 0.5 ), transparent );
+	border-radius: 38px;
+	border: 3px solid rgba( 60, 120, 30, 0.8 );
+	filter: drop-shadow( 0 0 1px black );
+	padding-top: 0.5em;
+}
+li.folder {
+	width: 4em;
+	height: 4em;
+	box-sizing: border-box;
+	border-radius: 38px;
+	filter: drop-shadow( 0 0 1px black );
+}
+img.folder {
+	width: 2em;
+	height: 2em;
+	margin: 1em 1em;
+}
+img.folder:hover {
+	filter: brightness( 2 ) hue-rotate( -33deg ) saturate( 2 );
+}
